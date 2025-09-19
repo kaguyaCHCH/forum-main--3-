@@ -1,0 +1,18 @@
+{{ define "clubs" }}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clubs</title>
+</head>
+<body>
+    <h1>Список клубов</h1>
+    <ul>
+    {{ range . }}
+        <li>
+            <a href="/board/club/{{ .ID }}">{{ .Name }}</a> — {{ .Topic }}
+        </li>
+    {{ end }}
+    </ul>
+</body>
+</html>
+{{ end }}

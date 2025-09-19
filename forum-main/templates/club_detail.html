@@ -1,0 +1,14 @@
+{{ define "club_detail" }}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ .Name }}</title>
+</head>
+<body>
+    <h1>{{ .Name }}</h1>
+    <p><b>Тематика:</b> {{ .Topic }}</p>
+    <p>{{ .Description }}</p>
+    <a href="/board/club">← Назад к списку клубов</a>
+</body>
+</html>
+{{ end }}
